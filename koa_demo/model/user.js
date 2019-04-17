@@ -16,7 +16,7 @@ const User = db.define('user', {
     }
 );
 
-// User.sync();
+User.sync();
 async function queryUser(){
 
     let user = await User.findOne();
